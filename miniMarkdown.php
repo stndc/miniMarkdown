@@ -2,7 +2,7 @@
 
 /*
 STN
-miniMarkdown v0.6.0
+miniMarkdown v1.0.0
 */
 
 function minimarkdown($text) {
