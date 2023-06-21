@@ -5,7 +5,7 @@
 * miniMarkdown
 * author: STNDC
 * web: https://stndc.github.io
-* version: 1.x
+* version: 2.0.x
 * 
 * @param string $text
 * 
@@ -36,6 +36,15 @@ function minimarkdown($text){
 
 	// Negative
 	$text = preg_replace('/\-\-(.+)\-\-/', '<span class="negative">$1</span>', $text);
+
+	// Image
+	$text = preg_replace('/\!\[(.+)\]\((.+)\)/', '<img src="$2" alt="$1">', $text);
+
+	// Link
+	$text = preg_replace('/\[(.+)\]\((.+)\)/', '<a href="$2">$1</a>', $text);
+
+	// Email
+	$text = preg_replace('/\[email\](.+)\[\/email\]/', '<a href="mailto:$1">$1</a>', $text);
 
 	return $text;
 
