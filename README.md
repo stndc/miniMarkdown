@@ -4,6 +4,17 @@ miniMakdown is a library written in PHP. It's simple markup that makes it easy t
 
 Use function `minimarkdown()`
 
+```
+<?php
+
+include 'miniMarkdown.php';
+
+$h1 = '# h1 Text';
+echo minimarkdown($h1);
+
+?>
+```
+
 ## Headings
 
 To create a heading, add `#` symbols before your heading text. The number of `#` you use will determine the hierarchy level and typeface size of the heading.
