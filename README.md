@@ -10,7 +10,10 @@ _italic_
 **bold**
 `Code`
 ++Positive++
---Negative--';
+--Negative--
+![Alt](https://www.google.com/intl/en_ALL/images/logo.gif)
+[Google](https://www.google.com)
+[email](mailto:mail@mail.com)';
 
 echo minimarkdown($text);
 ```
