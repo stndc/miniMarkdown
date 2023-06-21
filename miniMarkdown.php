@@ -28,6 +28,15 @@ function minimarkdown($text){
 	// Bold
 	$text = preg_replace('/\*\*(.+)\*\*/', '<strong>$1</strong>', $text);
 
+	// Code
+	$text = preg_replace('/`(.+)`/', '<code>$1</code>', $text);
+
+	// Positive
+	$text = preg_replace('/\+\+(.+)\+\+/', '<span class="positive">$1</span>', $text);
+
+	// Negative
+	$text = preg_replace('/\-\-(.+)\-\-/', '<span class="negative">$1</span>', $text);
+
 	return $text;
 
 }
