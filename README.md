@@ -46,3 +46,7 @@ You can display an image by adding `!` and wrapping the alt text in `[ ]`. Alt t
 ```
 ![Alt](https://www.google.com/intl/en_ALL/images/logo.gif)
 ```
+
+## License
+
+[MIT](https://github.com/stndc/miniMarkdown/blob/main/LICENSE.md)
