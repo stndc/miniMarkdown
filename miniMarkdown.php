@@ -22,6 +22,12 @@ function minimarkdown($text){
 	// H3
 	$text = preg_replace('/^### (.+)$/m', '<h3>$1</h3>', $text);
 
+	// Italic
+	$text = preg_replace('/\_(.+)\_/', '<em>$1</em>', $text);
+
+	// Bold
+	$text = preg_replace('/\*\*(.+)\*\*/', '<strong>$1</strong>', $text);
+
 	return $text;
 
 }
