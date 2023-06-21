@@ -19,6 +19,9 @@ function minimarkdown($text){
 	// H2
 	$text = preg_replace('/^## (.+)$/m', '<h2>$1</h2>', $text);
 
+	// H3
+	$text = preg_replace('/^### (.+)$/m', '<h3>$1</h3>', $text);
+
 	return $text;
 
 }
