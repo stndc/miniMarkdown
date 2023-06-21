@@ -1,6 +1,6 @@
 # miniMarkdown
 
-miniMakdown is a library written in PHP. It's simple markup that makes it easy to add formatting, links, and images to plain text. 
+miniMakdown is a library written in PHP. It's simple markup that makes it easy to add formatting, links, and images to plain text. You can see that the documentation is [Spanish](https://github.com/stndc/miniMarkdown/blob/main/ES.md).
 
 Use function `minimarkdown()`
 
